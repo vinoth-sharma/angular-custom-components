@@ -1,0 +1,40 @@
+.success-bar{
+    background-color: green !important;
+    color: wheat !important;
+}
+::ng-deep .mat-snack-bar-container{
+    background: green !important;
+}
+
+
+
+.toaster-overlay-container{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.toast-bar-container{
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin: 24px;
+    max-width: 33vw;
+    min-width: 344px;
+    padding: 14px 16px;
+    min-height: 48px;
+    transform-origin: center;
+    color: rgba(255,255,255,.7);
+    background: #323232;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+.toast-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+    opacity: 1;
+}

@@ -1,7 +1,17 @@
 
-<h3>Multi select dropdown</h3>
-<app-multi-select [data]="data" [index]="1" 
+<!-- <h3>Multi select dropdown</h3>
+<ng-mat-multi-select [data]="data" [index]="1" 
 (optionSelected)="selectionDone($event)"
 [aliasNames]="obj"
-[allowAlias]="true"
-[selectedColumns]="selectedItems"> </app-multi-select>
+[allowAlias]="false"
+[selectedColumns]="selectedItems"> </ng-mat-multi-select> -->
+
+<!-- <app-ng-toaster></app-ng-toaster> -->
+
+<my-mat-multiselect [data]="dataObj" [settings]="mySetting"
+[(inputModel)]="selectData"></my-mat-multiselect> 
+
+<my-mat-multiselect [data]="dataObj1" [settings]="mySetting1"
+[(inputModel)]="selectData1"></my-mat-multiselect> 
+
+<button (click)="showData()" mat-raised-button>show me the value</button>
